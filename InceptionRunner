@@ -1,0 +1,11 @@
+
+public class InceprionRunner {
+
+	public static void main(String[] args) {
+
+		Inception i = new Inception();
+		System.out.println(i.factorial(30));
+		
+	}
+
+}
