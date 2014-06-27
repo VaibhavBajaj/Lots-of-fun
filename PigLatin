@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+
+public class PigLatin {
+
+	public static void main(String[] args) {
+
+		Scanner keyboard = new Scanner(System.in);
+		String input = keyboard.nextLine();
+		
+		String[] words = input.split(" ");
+		for(String word : words) {
+			
+			int index = 0;
+			String first = word.substring(0 , 1);
+			
+			if (first.equals("a") || first.equals("e") || first.equals("i") || first.equals("o") || first.equals("u")) {
+				word = word + "yay";
+			}
+			else {
+				word = word.substring(1, word.length()) + first + "ay";
+			}
+			System.out.print(word + " ");
+		}
+
+		
+	}
+}
