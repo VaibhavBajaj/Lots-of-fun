@@ -1,0 +1,25 @@
+import java.math.BigInteger;
+
+
+public class Inception {
+	/*
+	public int factorial( int n ){
+		
+		int product = 1;
+		
+		for ( int i = 1; i <= n; i++) {
+			product = product * i;
+		}
+		return product;
+	}
+	*/
+	
+	public long factorial(int n){
+		if(n == 1) { 
+			return 1;
+		}
+		else {
+			return n * factorial(n - 1);
+		}
+	}
+}
