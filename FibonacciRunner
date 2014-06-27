@@ -1,0 +1,11 @@
+
+public class FibonacciRunner {
+
+	public static void main(String[] args) {
+
+		FibonacciSequence i = new FibonacciSequence();
+		System.out.println(i.Fibonacci(50));
+		
+	}
+	
+}
